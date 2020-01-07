@@ -12,6 +12,7 @@ public class Dino : MonoBehaviour
     }
     void Update()
     {
+		
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("ds");
