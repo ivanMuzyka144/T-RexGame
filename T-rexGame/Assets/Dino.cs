@@ -27,6 +27,8 @@ public class Dino : MonoBehaviour
 		{
 			rigidBody.AddForce(new Vector2(0, jumpSpeed));
 			isGrounded = false;
+
+			animanor.SetBool("isJumping", true);
 		}
 
 		if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -52,5 +54,6 @@ public class Dino : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D col)
 	{
 		isGrounded = true;
+		animanor.SetBool("isJumping", false);
 	}
 }
