@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8304215279753912125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2721471518974807989}
+  - component: {fileID: 2454346719692470388}
+  m_Layer: 0
+  m_Name: LevelCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2721471518974807989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304215279753912125}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2454346719692470388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304215279753912125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ead7dab445d8094fa27acb3329c5f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groud:
+  - {fileID: 1018064664792938464, guid: bdacf311612a20d43bdf5110e21a1f47, type: 3}
+  - {fileID: 5045519322072962501, guid: 508bcefc877fbc048aa8373ab1ef079a, type: 3}
+  - {fileID: 8729729782327759032, guid: 5ffd80fd340345d45bc0df7f23f05d8b, type: 3}
+  - {fileID: 7891882932427166393, guid: 8e9a58de682b6f542805a9add2afa113, type: 3}
+  - {fileID: 5869257555327530851, guid: b8695e1214e67ff448ed3905f4426ac3, type: 3}
+  - {fileID: 9172557399388462006, guid: 7ed3161110d54b642942666627b32eff, type: 3}
+  - {fileID: 17159232561613149, guid: 62a3999b95536064986e6fd7bf1d39bc, type: 3}
+  cactuses:
+  - {fileID: 9000305220021058277, guid: 2f165a6777b102d428ad6c372bfe2743, type: 3}
+  - {fileID: 3410644997321522414, guid: 58916e0991f676241ad99551256f226d, type: 3}
+  - {fileID: 935354107274657418, guid: e1bc2cb6f542c014eb35341013678361, type: 3}
+  - {fileID: 113785213017422228, guid: 2bb00124e7aa1384ba5e5f3f66f03370, type: 3}
+  - {fileID: 2216232670394708721, guid: 6b042ebacfd54e94980baf4303eba141, type: 3}
+  - {fileID: 33387257062717072, guid: 091ac17853c8c974eb0bd68975b7c28a, type: 3}
+  ptero: {fileID: 0}
+  groundReference: {fileID: 0}
+  movingObject: {fileID: 0}
+  groundStep: 3.9
