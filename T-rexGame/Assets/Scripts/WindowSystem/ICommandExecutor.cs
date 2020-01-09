@@ -1,5 +1,5 @@
 ﻿
 public interface ICommandExecutor 
 {
-    public void Execute(string command);
+    void Execute(string command);
 }
