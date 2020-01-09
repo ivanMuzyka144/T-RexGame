@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ead7dab445d8094fa27acb3329c5f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groud:
+  ground:
   - {fileID: 1018064664792938464, guid: bdacf311612a20d43bdf5110e21a1f47, type: 3}
   - {fileID: 5045519322072962501, guid: 508bcefc877fbc048aa8373ab1ef079a, type: 3}
   - {fileID: 8729729782327759032, guid: 5ffd80fd340345d45bc0df7f23f05d8b, type: 3}
@@ -61,4 +61,5 @@ MonoBehaviour:
   ptero: {fileID: 0}
   groundReference: {fileID: 0}
   movingObject: {fileID: 0}
+  groundEdge: {fileID: 0}
   groundStep: 3.9
