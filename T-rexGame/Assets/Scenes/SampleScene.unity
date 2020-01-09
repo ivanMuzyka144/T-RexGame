@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 5282633553008326336, guid: c812c33762bb75d41940295ea84ef792,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 5282633553008326336, guid: c812c33762bb75d41940295ea84ef792,
         type: 3}
@@ -225,7 +225,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -242,7 +242,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.916465
+  orthographic size: 4.7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -374,12 +374,12 @@ PrefabInstance:
     - target: {fileID: 5923741752298350987, guid: 5838b5b2183913848aa1c811afb200c9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5923741752298350987, guid: 5838b5b2183913848aa1c811afb200c9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 5923741752298350987, guid: 5838b5b2183913848aa1c811afb200c9,
         type: 3}
