@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1406200103459190843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7208875453694918026}
+  m_Layer: 0
+  m_Name: DinoWindowElement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7208875453694918026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406200103459190843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5282633553008326336}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2937001654673322784
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,7 +58,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5282633553008326336}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5282633553008326337
 GameObject:
@@ -57,6 +87,7 @@ Transform:
   m_LocalPosition: {x: -0.02, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7208875453694918026}
   - {fileID: 5282633553155172506}
   - {fileID: 5282633553533089987}
   - {fileID: 120299049775889767}
@@ -95,7 +126,7 @@ Transform:
   m_LocalScale: {x: 18.940647, y: 0.07, z: 1}
   m_Children: []
   m_Father: {fileID: 5282633553008326336}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5282633553533089985
 SpriteRenderer:
@@ -222,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 2496736916145531896, guid: ff9a691b7345cc746b462fe0baa691bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2496736916145531896, guid: ff9a691b7345cc746b462fe0baa691bd,
         type: 3}
@@ -297,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 6718782146591111637, guid: 098ce8314e733af4c93e3c3fa3ec753a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6718782146591111637, guid: 098ce8314e733af4c93e3c3fa3ec753a,
         type: 3}
@@ -372,7 +403,7 @@ PrefabInstance:
     - target: {fileID: 2721471518974807989, guid: b67f693815e783f4c8d8b167e0a9b73b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2721471518974807989, guid: b67f693815e783f4c8d8b167e0a9b73b,
         type: 3}

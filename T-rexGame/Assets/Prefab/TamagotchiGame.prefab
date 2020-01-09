@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 2.1945798, y: 0.34899998, z: 1}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &226287007509175969
 SpriteRenderer:
@@ -109,7 +109,7 @@ Transform:
   m_LocalScale: {x: 0.7245186, y: 0.63446945, z: 1}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4519403197107592024
 SpriteRenderer:
@@ -189,7 +189,7 @@ Transform:
   m_LocalScale: {x: 2.1945798, y: 0.34899998, z: 1}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &421331653639311593
 SpriteRenderer:
@@ -269,7 +269,7 @@ Transform:
   m_LocalScale: {x: 0.72451997, y: 0.63447, z: 1}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1501267315579113780
 SpriteRenderer:
@@ -349,7 +349,7 @@ Transform:
   m_LocalScale: {x: 2.194581, y: 0.349, z: 1}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1567362548230332681
 SpriteRenderer:
@@ -427,6 +427,7 @@ Transform:
   m_LocalPosition: {x: -3.4360392, y: 2.318966, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 5886275373851098340}
   - {fileID: 6841109620129325884}
   - {fileID: 6256591975243849313}
   - {fileID: 8433089875294434494}
@@ -466,7 +467,7 @@ Transform:
   m_LocalScale: {x: 0.72451997, y: 0.63447, z: 1}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &891101280251396212
 SpriteRenderer:
@@ -546,7 +547,7 @@ Transform:
   m_LocalScale: {x: 5.7026143, y: 3.1875987, z: 3.1875987}
   m_Children: []
   m_Father: {fileID: 5923741752298350987}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7563341510669475861
 SpriteRenderer:
@@ -597,3 +598,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7756789501345907240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5886275373851098340}
+  m_Layer: 0
+  m_Name: TamagotchiWindowElement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5886275373851098340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756789501345907240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5923741752298350987}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
