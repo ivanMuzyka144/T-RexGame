@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 33387257062717079}
   - component: {fileID: 33387257062717077}
   - component: {fileID: 33387257062717078}
+  - component: {fileID: 7027721234626286282}
   m_Layer: 0
   m_Name: CactusLow3
   m_TagString: Obstacle
@@ -108,3 +109,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0888889, y: 0.73333335}
   m_EdgeRadius: 0
+--- !u!114 &7027721234626286282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33387257062717072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f989836b475129e4d88f633359fdb585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

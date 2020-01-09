@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelCreator : MonoBehaviour
 {
 	[SerializeField]
-	GameObject[] groud;
+	GameObject[] ground;
 
 	[SerializeField]
 	GameObject[] cactuses;
@@ -14,44 +14,68 @@ public class LevelCreator : MonoBehaviour
 	GameObject ptero;
 
 	[SerializeField]
-	Transform groundReference , movingObject;
+	Transform groundReference, groundEdge;
 
 	[SerializeField]
 	float groundStep;
 
+	float frequency;
 
-	void Awake()
-    {
-		CreateGround();
+	Vector3 currentPosition;
+
+	private float nextSpawn;
+
+	void Start()
+	{
+		currentPosition = new Vector3(-8, groundReference.position.y, groundReference.position.z);
+
+		for (int i =0; i<7; i++)
+		{
+			CreateGround(currentPosition);
+			if (i > 3 && i % 2 == 0)
+				if (Random.Range(0, 4) >= 2)
+				{
+					CreateObstacle(currentPosition);
+				}
+		}
+		
+		
     }
 
-	void CreateGround()
+	void CreateGround(Vector3 position)
 	{
-		Vector3 position = new Vector3(-8, groundReference.position.y, groundReference.position.z);
-		for (int i = 0; i<50; i++)
-		{
-
-			Instantiate(groud[Random.Range(0, groud.Length - 1)], position, groundReference.rotation, movingObject);
-
-			if (i > 6 && i%2==0)
-				CreateObstacle(position);
-
-			position.x += groundStep;
-		}
+		
+		Instantiate(ground[Random.Range(0, ground.Length - 1)], position, groundReference.rotation);
+		currentPosition.x += groundStep;
 
 	}
 
 
 	void CreateObstacle(Vector3 position)
 	{
-		if (Random.Range(0, 4) >= 2)
-		{
-			Instantiate(cactuses[Random.Range(0, cactuses.Length - 1)], position, Quaternion.identity, movingObject);
-		}
+		Instantiate(cactuses[Random.Range(0, cactuses.Length - 1)], position + new Vector3(0, 0.1f), Quaternion.identity);
 	}
 
-    void Update()
+	int lastObst = 0;
+
+	void Update()
     {
-        
-    }
+		
+		frequency = groundStep /RunManager.GetInstance().GetSpeed();
+		if (Time.time >= nextSpawn)
+		{
+			nextSpawn = Time.time + frequency;
+			CreateGround(groundEdge.position);
+			if (Random.Range(0, lastObst) >= 1)
+			{	
+				CreateObstacle(groundEdge.position);
+				lastObst = 0;
+			}
+			else
+			{
+				lastObst++;
+			}
+		}
+		
+	}
 }
