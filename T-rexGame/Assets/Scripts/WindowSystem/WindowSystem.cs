@@ -64,10 +64,12 @@ public class WindowSystem : MonoBehaviour
         if (isItPause)
         {
             RunManager.GetInstance().Pause();
+            ScoreTimer.Instance.Pause();
         }
         else
         {
             RunManager.GetInstance().Play();
+            ScoreTimer.Instance.Play();
         }
     }
 }
