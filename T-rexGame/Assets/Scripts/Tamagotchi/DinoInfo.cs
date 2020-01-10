@@ -10,7 +10,7 @@ public class DinoInfo : MonoBehaviour
 
     public float timer = 2.0f;
 
-    public DinoInfo Instance; 
+    public static DinoInfo Instance { get; set; } 
     void Start()
     {
         Instance = this;
@@ -30,7 +30,6 @@ public class DinoInfo : MonoBehaviour
         }
         else
         {
-            Debug.Log("Decrease "+ food);
             Decrease();
             timer = 2.5f;
         }

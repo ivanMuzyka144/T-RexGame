@@ -13,6 +13,6 @@ public class WindowElement : MonoBehaviour
 
     public void BroadcastCommand(string command)
     {
-        executor.Execute(command);
+        //executor.Execute(command);
     }
 }
