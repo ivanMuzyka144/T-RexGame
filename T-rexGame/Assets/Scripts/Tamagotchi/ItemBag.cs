@@ -29,6 +29,15 @@ public class ItemBag : MonoBehaviour
             if (amountOfMeat > 0)
             {
                 amountOfMeat--;
+                int currentAmountOfMeat= DinoInfo.Instance.meat;
+                if (currentAmountOfMeat + 25 < 100)
+                {
+                    DinoInfo.Instance.meat += 25;
+                }
+                else
+                {
+                    DinoInfo.Instance.meat = 100;
+                }
             }
         }
         textAmountOfMeat.text = amountOfMeat + "";
@@ -45,6 +54,15 @@ public class ItemBag : MonoBehaviour
             if (amountOfWater > 0)
             {
                 amountOfWater--;
+                int currentAmountOfWater = DinoInfo.Instance.water;
+                if (currentAmountOfWater + 25 < 100)
+                {
+                    DinoInfo.Instance.water += 25;
+                }
+                else
+                {
+                    DinoInfo.Instance.water = 100;
+                }
             }
         }
         textAmountOfWater.text = amountOfWater + "";

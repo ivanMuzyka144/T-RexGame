@@ -8,7 +8,7 @@ public class DinoInfo : MonoBehaviour
     public int meat = 100;
     public int water = 100;
 
-    public float timer = 0.5f;
+    public float timer = 0.7f;
 
     public Slider meatSlider;
     public Slider waterSlider;
@@ -36,7 +36,7 @@ public class DinoInfo : MonoBehaviour
         else
         {
             Decrease();
-            timer = 0.5f;
+            timer = 0.7f;
         }
     }
 }
