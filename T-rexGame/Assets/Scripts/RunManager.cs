@@ -20,6 +20,10 @@ public class RunManager : MonoBehaviour
 	{
 		return speed;
 	}
+	public float GetTempo()
+	{
+		return tempo;
+	}
 
 	private void Awake()
 	{
