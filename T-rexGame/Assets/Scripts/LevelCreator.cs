@@ -40,14 +40,9 @@ public class LevelCreator : MonoBehaviour
 
 		currentPosition = new Vector3(-8, groundReference.position.y, groundReference.position.z);
 
-		for (int i =0; i<7; i++)
+		for (int i =0; i<6; i++)
 		{
 			CreateGround(currentPosition);
-			if (i > 3 && i % 2 == 0)
-				if (Random.Range(0, 4) >= 2)
-				{
-					CreateObstacle(currentPosition);
-				}
 		}
 		
 		
