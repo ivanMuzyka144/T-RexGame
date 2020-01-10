@@ -110,6 +110,7 @@ Transform:
   - {fileID: 551455710917342924}
   - {fileID: 8848610175722351843}
   - {fileID: 7013746371800790111}
+  - {fileID: 2938125034184255127}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -157,6 +158,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeFrame: {fileID: 1301397411528000808}
+  executor: {fileID: 4633097903314889128}
+--- !u!1 &4633097903314889128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2938125034184255127}
+  - component: {fileID: 7894709913479241725}
+  m_Layer: 0
+  m_Name: ClothesExecutor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2938125034184255127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633097903314889128}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.06900008, y: -0.034999914, z: 126.46875}
+  m_LocalScale: {x: 1.1267605, y: 1.1763598, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2116999874727438881}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7894709913479241725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633097903314889128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3fd98f472f4f54e960914eb7a6221f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8941277146865048309
 GameObject:
   m_ObjectHideFlags: 0

@@ -124,6 +124,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeFrame: {fileID: 8004473423802646078}
+  executor: {fileID: 2633442063781277563}
+--- !u!1 &2633442063781277563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7525428278595331223}
+  - component: {fileID: 9031259611090524966}
+  m_Layer: 0
+  m_Name: CablesExecutor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7525428278595331223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633442063781277563}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.020000141, y: -0.009999996, z: 126.46875}
+  m_LocalScale: {x: 2.6693358, y: 3.5992553, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3931261862701747990}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9031259611090524966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633442063781277563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6c04ea302eb6940b6ceffa872a2b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8004473423802646078
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +278,7 @@ Transform:
   - {fileID: 4080358509919179751}
   - {fileID: 4701781445609495441}
   - {fileID: 6532643580273913573}
+  - {fileID: 7525428278595331223}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

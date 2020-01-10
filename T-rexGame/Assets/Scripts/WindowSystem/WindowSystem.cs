@@ -35,5 +35,13 @@ public class WindowSystem : MonoBehaviour
         {
             queueOfExecutors.Peek().BroadcastCommand("Space");
         }
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            queueOfExecutors.Peek().BroadcastCommand("1");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            queueOfExecutors.Peek().BroadcastCommand("2");
+        }
     }
 }

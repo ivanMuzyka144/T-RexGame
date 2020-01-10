@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dino : MonoBehaviour
+public class Dino : MonoBehaviour, ICommandExecutor
 {
 	private Rigidbody2D rigidBody;
 
@@ -20,9 +20,38 @@ public class Dino : MonoBehaviour
 		animanor = GetComponent<Animator>();
 	}
 
+    public void Execute(string command)
+    {
+        if (command == "Space" && isGrounded)
+        {
+            rigidBody.AddForce(new Vector2(0, jumpSpeed));
+            isGrounded = false;
 
-	void Update()
-	{
+            animanor.SetBool("isJumping", true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            animanor.SetBool("isCrouching", true);
+        }
+        if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            animanor.SetBool("isCrouching", false);
+        }
+
+
+        if (rigidBody.velocity.y < 0)
+        {
+            rigidBody.velocity += Vector2.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rigidBody.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            rigidBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    void Update()
+	{/*
 		if (Input.GetButtonDown("Jump") && isGrounded)
 		{
 			rigidBody.AddForce(new Vector2(0, jumpSpeed));
@@ -48,7 +77,7 @@ public class Dino : MonoBehaviour
 		else if (rigidBody.velocity.y > 0 && !Input.GetButton("Jump"))
 		{
 			rigidBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-		}
+		}*/
 	}
 
 	void OnCollisionEnter2D(Collision2D col)
@@ -56,4 +85,5 @@ public class Dino : MonoBehaviour
 		isGrounded = true;
 		animanor.SetBool("isJumping", false);
 	}
+
 }

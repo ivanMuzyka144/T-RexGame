@@ -5,7 +5,7 @@ using UnityEngine;
 public class WindowElement : MonoBehaviour
 {
     public GameObject activeFrame;
-    public ICommandExecutor executor;
+    public GameObject executor;
     public void ChangeState(bool isActive)
     {
         activeFrame.SetActive(isActive);
@@ -13,6 +13,6 @@ public class WindowElement : MonoBehaviour
 
     public void BroadcastCommand(string command)
     {
-        //executor.Execute(command);
+        executor.GetComponent<ICommandExecutor>().Execute(command);
     }
 }
