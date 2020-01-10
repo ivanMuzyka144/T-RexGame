@@ -1628,6 +1628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b08793794cd4aba4ea2df756f5743567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meatButton: {fileID: 0}
+  waterButton: {fileID: 0}
 --- !u!1 &5923741752298350986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,7 +1737,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b5648bcbc361dcb478360788526397da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
