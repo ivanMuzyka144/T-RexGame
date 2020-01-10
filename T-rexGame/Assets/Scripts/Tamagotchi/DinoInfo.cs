@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DinoInfo : MonoBehaviour
 {
-    public int food = 100;
+    public int meat = 100;
     public int water = 100;
-    public int happiness = 100;
 
-    public float timer = 2.0f;
+    public float timer = 0.5f;
+
+    public Slider meatSlider;
+    public Slider waterSlider;
 
     public static DinoInfo Instance { get; set; } 
     void Start()
@@ -18,9 +21,11 @@ public class DinoInfo : MonoBehaviour
 
     public void Decrease()
     {
-        food -= 10;
-        water -= 10;
-        happiness -= 10;
+        meat -= 5;
+        water -= 5;
+
+        meatSlider.value = meat;
+        waterSlider.value = water;
     }
     void Update()
     {
@@ -31,7 +36,7 @@ public class DinoInfo : MonoBehaviour
         else
         {
             Decrease();
-            timer = 2.5f;
+            timer = 0.5f;
         }
     }
 }
