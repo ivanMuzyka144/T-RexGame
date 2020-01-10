@@ -1,5 +1,82 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &628390536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628390537}
+  - component: {fileID: 628390539}
+  - component: {fileID: 628390538}
+  m_Layer: 0
+  m_Name: ScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &628390537
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628390536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5282633553008326336}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 6.5, y: 0.145}
+  m_SizeDelta: {x: 175.67, y: 59.029}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &628390539
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628390536}
+  m_CullTransparentMesh: 0
+--- !u!114 &628390538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628390536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 45
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 00000
 --- !u!1 &360868042137858195
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +167,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7406537482345205543}
   - component: {fileID: 6251718026275137001}
-  - component: {fileID: 1881380606235528618}
   m_Layer: 0
   m_Name: ScoreTimer
   m_TagString: Untagged
@@ -124,18 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018aa53e55c14954f911eb679eabddc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1881380606235528618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997809971551165669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018aa53e55c14954f911eb679eabddc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  scoreText: {fileID: 628390538}
 --- !u!1 &1406200103459190843
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeFrame: {fileID: 360868042137858195}
-  executor: {fileID: 0}
+  executor: {fileID: 5282633553155172507}
 --- !u!1 &2937001654673322784
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +381,7 @@ Transform:
   m_GameObject: {fileID: 5282633553008326337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.02, y: -0.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 108.82457, y: 108.82457, z: 108.82457}
   m_Children:
   - {fileID: 7208875453694918026}
   - {fileID: 5282633553155172506}
@@ -326,6 +391,7 @@ Transform:
   - {fileID: 3866733022548508073}
   - {fileID: 4229552555331554551}
   - {fileID: 7406537482345205543}
+  - {fileID: 628390537}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -584,18 +650,14 @@ PrefabInstance:
       propertyPath: jumpSpeed
       value: 315
       objectReference: {fileID: 0}
-    - target: {fileID: 6718782146591111638, guid: 098ce8314e733af4c93e3c3fa3ec753a,
-        type: 3}
-      propertyPath: lowJumpMultiplier
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6718782146591111638, guid: 098ce8314e733af4c93e3c3fa3ec753a,
-        type: 3}
-      propertyPath: fallMultiplier
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 098ce8314e733af4c93e3c3fa3ec753a, type: 3}
+--- !u!1 &5282633553155172507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6718782146591111636, guid: 098ce8314e733af4c93e3c3fa3ec753a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1473319165502886223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5282633553155172506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6718782146591111637, guid: 098ce8314e733af4c93e3c3fa3ec753a,
@@ -676,21 +738,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
         type: 3}
-      propertyPath: groundReference
-      value: 
-      objectReference: {fileID: 5282633553533089987}
-    - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
-        type: 3}
-      propertyPath: movingObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
-        type: 3}
-      propertyPath: groundEdge
-      value: 
-      objectReference: {fileID: 120299049775889767}
-    - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
-        type: 3}
       propertyPath: supply.Array.data[0]
       value: 
       objectReference: {fileID: 369836590582231380, guid: fc546df0e6855fb4d941738e1108ebd5,
@@ -701,6 +748,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6245833136771625318, guid: 68f40175ed1cbbd4cb220657374bab4a,
         type: 3}
+    - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
+        type: 3}
+      propertyPath: groundReference
+      value: 
+      objectReference: {fileID: 5282633553533089987}
+    - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
+        type: 3}
+      propertyPath: groundEdge
+      value: 
+      objectReference: {fileID: 120299049775889767}
     - target: {fileID: 2454346719692470388, guid: b67f693815e783f4c8d8b167e0a9b73b,
         type: 3}
       propertyPath: groundStep

@@ -2,9 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreTimer : MonoBehaviour
 {
+    public Text scoreText;
     double time = 0;
     void Update()
     {
@@ -18,6 +20,6 @@ public class ScoreTimer : MonoBehaviour
         }
         char[] normalArray = reversedString.ToCharArray();
         Array.Reverse(normalArray);
-        Debug.Log(new string(normalArray));
+        scoreText.text=new string(normalArray);
     }
 }
