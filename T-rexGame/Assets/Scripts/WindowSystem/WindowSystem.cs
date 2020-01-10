@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class WindowSystem : MonoBehaviour
 {
+    public GameObject pausePanel;
+
+    private bool isItMainGameWindow; 
     private Queue<WindowElement> queueOfExecutors;
     void Start()
     {
@@ -12,6 +15,7 @@ public class WindowSystem : MonoBehaviour
         WindowElement tamagotchiElement = GameObject.Find("TamagotchiWindowElement").GetComponent<WindowElement>();
         WindowElement clothesElement = GameObject.Find("ClothesWindowElement").GetComponent<WindowElement>();
         WindowElement cablesElement = GameObject.Find("CablesWindowElement").GetComponent<WindowElement>();
+        isItMainGameWindow = true;
         dinoElement.ChangeState(true);
         tamagotchiElement.ChangeState(false);
         clothesElement.ChangeState(false);
@@ -28,8 +32,17 @@ public class WindowSystem : MonoBehaviour
             WindowElement oldActiveElement= queueOfExecutors.Dequeue();
             oldActiveElement.ChangeState(false);
             queueOfExecutors.Enqueue(oldActiveElement);
+            if (oldActiveElement.name == "DinoWindowElement")
+            {
+                ChangePauseState(true);
+            }
+
             WindowElement newActiveElement = queueOfExecutors.Peek();
             newActiveElement.ChangeState(true);
+            if (newActiveElement.name == "DinoWindowElement")
+            {
+                ChangePauseState(false);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -42,6 +55,21 @@ public class WindowSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             queueOfExecutors.Peek().BroadcastCommand("2");
+        }
+    }
+
+    public void ChangePauseState(bool isItPause)
+    {
+        pausePanel.SetActive(isItPause);
+        if (isItPause)
+        {
+            RunManager.GetInstance().Pause();
+            ScoreTimer.Instance.Pause();
+        }
+        else
+        {
+            RunManager.GetInstance().Play();
+            ScoreTimer.Instance.Play();
         }
     }
 }
