@@ -367,7 +367,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1322128188
 RectTransform:
@@ -534,6 +534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TamagotchiGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923741752298350986, guid: 5838b5b2183913848aa1c811afb200c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5923741752298350987, guid: 5838b5b2183913848aa1c811afb200c9,
         type: 3}
