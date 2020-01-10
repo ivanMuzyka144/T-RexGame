@@ -20,7 +20,7 @@ public class Cable : MonoBehaviour
 	{
 
 		if (speed < topSpeed) {
-			speed += RunManager.GetInstance().GetTempo() / 10 * Time.deltaTime;
+			speed += RunManager.GetInstance().GetTempo() / 20 * Time.deltaTime;
 		}
 
 		if (transform.position.y >= socketLine.position.y)

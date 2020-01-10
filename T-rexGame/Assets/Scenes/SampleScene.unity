@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 5282633553008326336, guid: c812c33762bb75d41940295ea84ef792,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9794.211
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5282633553008326336, guid: c812c33762bb75d41940295ea84ef792,
         type: 3}
@@ -192,6 +192,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 628390538, guid: c812c33762bb75d41940295ea84ef792, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c812c33762bb75d41940295ea84ef792, type: 3}
 --- !u!1 &519420028
@@ -599,7 +604,7 @@ PrefabInstance:
     - target: {fileID: 2116999874727438881, guid: 3fb92a6e78bb01b4fbc45ef3c551e8a5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23557.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2116999874727438881, guid: 3fb92a6e78bb01b4fbc45ef3c551e8a5,
         type: 3}
@@ -683,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 5923741752298350987, guid: 5838b5b2183913848aa1c811afb200c9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9651.687
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5923741752298350987, guid: 5838b5b2183913848aa1c811afb200c9,
         type: 3}
@@ -816,6 +821,16 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1061983854, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
+        type: 3}
+    - target: {fileID: 685743523, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
 --- !u!4 &5923741752469466389 stripped
@@ -849,7 +864,7 @@ PrefabInstance:
     - target: {fileID: 3931261862701747990, guid: 63439a9f6f6038944986d75bca3170fc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23557.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3931261862701747990, guid: 63439a9f6f6038944986d75bca3170fc,
         type: 3}

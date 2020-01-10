@@ -17,7 +17,7 @@ public class CableSpawner : MonoBehaviour
 	public float gap = 0.5f;
     void Awake()
     {
-		nextSpawn = 0;
+		nextSpawn = Random.Range(10,15);
 
 		spots = new Vector3 [spotsCount];
 		for(int i = 0; i < spotsCount; i+=2)
