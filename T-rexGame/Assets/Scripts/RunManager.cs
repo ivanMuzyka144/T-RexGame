@@ -7,8 +7,9 @@ public class RunManager : MonoBehaviour
 	private static RunManager instance;
 
 	[SerializeField]
-	float speed, tempo;
+	float speed, tempo, topSpeed;
 
+	float speedTmp, tempoTmp;
 
 	public static RunManager GetInstance()
 	{
@@ -28,8 +29,24 @@ public class RunManager : MonoBehaviour
 			Destroy(gameObject);
 	}
 
+	public void Pause()
+	{
+		speedTmp = speed;
+		tempoTmp = tempo;
+		speed = 0;
+		tempo = 0;
+	}
+
+	public void Play()
+	{
+		speed = speedTmp;
+		tempo = tempoTmp;
+	}
+
 	void Update()
-    {
-		speed += tempo/10 *  Time.deltaTime;
-    }
-}
+	{
+		if (speed < topSpeed) { }
+			speed += tempo / 10 * Time.deltaTime;
+		}
+	}
+

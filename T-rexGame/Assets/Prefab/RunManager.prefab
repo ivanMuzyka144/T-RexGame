@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   tempo: 1
+  topSpeed: 18
