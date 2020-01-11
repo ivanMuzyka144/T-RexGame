@@ -197,16 +197,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5082865880626788796, guid: c812c33762bb75d41940295ea84ef792,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 628390538, guid: c812c33762bb75d41940295ea84ef792, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
         type: 3}
+    - target: {fileID: 5082865880626788796, guid: c812c33762bb75d41940295ea84ef792,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6239486267884578429, guid: c812c33762bb75d41940295ea84ef792,
         type: 3}
       propertyPath: m_IsActive
@@ -1246,11 +1246,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 8891396392036571500, guid: 5838b5b2183913848aa1c811afb200c9,
-        type: 3}
-      propertyPath: timer
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 1913685262, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1259,16 +1254,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1061983854, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
-        type: 3}
-    - target: {fileID: 685743523, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
-        type: 3}
     - target: {fileID: 789926294, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1347,6 +1332,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8891396392036571500, guid: 5838b5b2183913848aa1c811afb200c9,
+        type: 3}
+      propertyPath: timer
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061983854, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
+        type: 3}
+    - target: {fileID: 685743523, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 064834d2d3a40d04490a87769819efe6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
 --- !u!4 &5923741752469466389 stripped
