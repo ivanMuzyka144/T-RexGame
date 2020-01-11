@@ -74,14 +74,23 @@ public class LevelCreator : MonoBehaviour
 	void Update()
     {
 		minHeight = 0;
+		float speed = RunManager.GetInstance().GetSpeed();
+		if (speed != 0)
+		{
+			frequency = groundStep / speed;
+			CreateGround();
+		}		
+		
+	}
 
-		frequency = groundStep /RunManager.GetInstance().GetSpeed();
+	void CreateGround()
+	{
 		if (Time.time >= nextSpawn)
 		{
 			nextSpawn = Time.time + frequency;
 			CreateGround(groundEdge.position);
 			if (Random.Range(0, lastObst) >= 1)
-			{	
+			{
 				CreateObstacle(groundEdge.position);
 				lastObst = 0;
 				minHeight = 1;
@@ -90,9 +99,9 @@ public class LevelCreator : MonoBehaviour
 			{
 				lastObst++;
 			}
-			if(Random.Range(0, lastSup) >= 4)
+			if (Random.Range(0, lastSup) >= 4)
 			{
-				Instantiate(supply[Random.Range(0, supply.Length)], groundEdge.position+verticals[Random.Range(minHeight,verticals.Length)], Quaternion.identity);
+				Instantiate(supply[Random.Range(0, supply.Length)], groundEdge.position + verticals[Random.Range(minHeight, verticals.Length)], Quaternion.identity);
 				lastSup = 0;
 			}
 			else
@@ -101,6 +110,5 @@ public class LevelCreator : MonoBehaviour
 			}
 
 		}
-		
 	}
 }
