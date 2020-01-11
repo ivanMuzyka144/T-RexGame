@@ -21,8 +21,8 @@ public class DinoInfo : MonoBehaviour
 
     public void Decrease()
     {
-        meat -= 5;
-        water -= 5;
+        meat -= 2;
+        water -= 3;
 
         meatSlider.value = meat;
         waterSlider.value = water;

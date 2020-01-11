@@ -545,7 +545,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b5648bcbc361dcb478360788526397da, type: 3}
   m_Color: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
   m_FlipX: 0
@@ -1341,6 +1341,16 @@ PrefabInstance:
         type: 3}
       propertyPath: timer
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891396392036571500, guid: 5838b5b2183913848aa1c811afb200c9,
+        type: 3}
+      propertyPath: meat
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891396392036571500, guid: 5838b5b2183913848aa1c811afb200c9,
+        type: 3}
+      propertyPath: water
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1061983854, guid: 5838b5b2183913848aa1c811afb200c9, type: 3}
       propertyPath: m_FontData.m_Font
